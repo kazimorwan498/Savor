@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "visby-thin";
+    src: url(../visby-fonts/VisbyThin.otf);
+}
+
+@font-face {
+    font-family: "visby-thin-italic";
+    src: url(../visby-fonts/VisbyThin-Italic.otf);
+}
+
+@font-face {
+    font-family: "visby-light";
+    src: url(../visby-fonts/VisbyLight.otf);
+}
+
+@font-face {
+    font-family: "visby-light-italic";
+    src: url(../visby-fonts/VisbyLight-Italic.otf);
+}
+
+@font-face {
+    font-family: "visby-regular";
+    src: url(../visby-fonts/VisbyRegular.otf);
+}
+
+@font-face {
+    font-family: "visby-regular-italic";
+    src: url(../visby-fonts/VisbyRegular-Italic.otf);
+}
+
+@font-face {
+    font-family: "visby-medium";
+    src: url(../visby-fonts/VisbyMedium.otf);
+}
+
+@font-face {
+    font-family: "visby-medium-italic";
+    src: url(../visby-fonts/VisbyMedium-Italic.otf);
+}
+
+@font-face {
+    font-family: "visby-semibold";
+    src: url(../visby-fonts/VisbySemibold.otf);
+}
+
+@font-face {
+    font-family: "visby-semibold-italic";
+    src: url(../visby-fonts/VisbySemibold-Italic.otf);
+}
+
+@font-face {
+    font-family: "visby-bold";
+    src: url(../visby-fonts/VisbyBold.otf);
+}
+
+@font-face {
+    font-family: "visby-bold-italic";
+    src: url(../visby-fonts/VisbyBold-Italic.otf);
+}
+
+@font-face {
+    font-family: "visby-extrabold";
+    src: url(../visby-fonts/VisbyExtrabold.otf);
+}
+
+@font-face {
+    font-family: "visby-extrabold-italic";
+    src: url(../visby-fonts/VisbyExtrabold-Italic.otf);
+}
