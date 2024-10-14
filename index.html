@@ -16,15 +16,23 @@
 
     <!-- Header Section -->
     <header class="header-section">
-        <div class="logo">Savor</div>
+        <div class="logo" onclick="window.location.reload()">Savor</div>
 
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Login</a></li>
+                <li onclick="window.location.hash = '#collection-section'">
+                    <a href="#collection-section">Products</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
             </ul>
         </nav>
 
@@ -44,138 +52,147 @@
     </main>
 
     <!-- Collection Section -->
-    <section class="collection-section">
+    <section class="collection-section" id="collection-section">
         <h2>Top Collections</h2>
 
         <div class="sample-card">
-            <div class="sample sample-1">
+
+            <div class="sample">
                 <div class="sample-img">
                     <img src="./img/sample_01.jpg" alt="sample">
                 </div>
-                <h4 class="product-name">Products Name</h4>
-                <div class="price">$ 74</div>
-                <div class="rating">
+                <h4 class="products-name">Products Name</h4>
+                <div class="products-price">$ 74</div>
+                <div class="products-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
 
-                    4.5
+                    &nbsp;&nbsp;4.5
                 </div>
             </div>
-            <div class="sample sample-2" style="--isHot: true;">
+
+            <div class="sample" style="--isHot: true;">
                 <div class="sample-img">
                     <img src="./img/sample_02.jpg" alt="sample">
                 </div>
-                <h4 class="product-name">Products Name</h4>
-                <div class="price">$ 69</div>
-                <div class="rating">
+                <h4 class="products-name">Products Name</h4>
+                <div class="products-price">$ 69</div>
+                <div class="products-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
 
-                    5.0
+                    &nbsp;5.0
                 </div>
             </div>
-            <div class="sample sample-3">
+
+            <div class="sample">
                 <div class="sample-img">
                     <img src="./img/sample_03.jpg" alt="sample">
                 </div>
-                <h4 class="product-name">Products Name</h4>
-                <div class="price">$ 84</div>
-                <div class="rating">
+                <h4 class="products-name">Products Name</h4>
+                <div class="products-price">$ 84</div>
+                <div class="products-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
 
-                    4.9
+                    &nbsp;4.9
                 </div>
             </div>
-            <div class="sample sample-4" style="--isSale: true;">
+
+            <div class="sample" style="--isSale: true;">
                 <div class="sample-img">
                     <img src="./img/sample_04.jpg" alt="sample">
                 </div>
-                <h4 class="product-name">Products Name</h4>
-                <div class="price">$ 89</div>
-                <div class="rating">
+                <h4 class="products-name">Products Name</h4>
+                <div class="products-price">$ 89</div>
+                <div class="products-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
 
-                    3.2
+                    &nbsp;&nbsp;3.2
                 </div>
             </div>
-            <div class="sample sample-5">
+
+            <div class="sample">
                 <div class="sample-img">
                     <img src="./img/sample_05.jpg" alt="sample" style="--isSale: true;">
                 </div>
-                <h4 class="product-name">Products Name</h4>
-                <div class="price">$ 94</div>
-                <div class="rating">
+                <h4 class="products-name">Products Name</h4>
+                <div class="products-price">$ 94</div>
+                <div class="products-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
 
-                    4.6
+                    &nbsp;4.6
                 </div>
             </div>
-            <div class="sample sample-6">
+
+            <div class="sample">
                 <div class="sample-img">
                     <img src="./img/sample_06.jpg" alt="sample">
                 </div>
-                <h4 class="product-name">Products Name</h4>
-                <div class="price">$ 99</div>
-                <div class="rating">
+                <h4 class="products-name">Products Name</h4>
+                <div class="products-price">$ 99</div>
+                <div class="products-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-regular fa-star"></i>
 
-                    4.1
+                    &nbsp;4.1
                 </div>
             </div>
-            <div class="sample sample-7" style="--isSale: true;">
+
+            <div class="sample" style="--isSale: true;">
                 <div class="sample-img">
                     <img src="./img/sample_07.jpg" alt="sample">
                 </div>
-                <h4 class="product-name">Products Name</h4>
-                <div class="price">$ 89</div>
-                <div class="rating">
+                <h4 class="products-name">Products Name</h4>
+                <div class="products-price">$ 89</div>
+                <div class="products-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
                     <i class="fa-regular fa-star"></i>
 
-                    3.5
+                    &nbsp;3.5
                 </div>
             </div>
-            <div class="sample sample-8" style="--isHot: true;">
+
+            <div class="sample" style="--isHot: true;">
                 <div class="sample-img">
                     <img src="./img/sample_08.jpg" alt="sample">
                 </div>
-                <h4 class="product-name">Products Name</h4>
-                <div class="price">$ 89</div>
-                <div class="rating">
+                <h4 class="products-name">Products Name</h4>
+                <div class="products-price">$ 89</div>
+                <div class="products-rating">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
 
-                    5.0
+                    &nbsp;5.0
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -183,24 +200,27 @@
     <section class="customer-review-section">
         <h2>Customer Reviews</h2>
 
-        <div class="customer customer1">
-            <img src="./img/customer_01.jpg" alt="customer" height="100">
-            <h3>John Jokie</h3>
-            <p>Incredible selection of trendy pieces! Fast shipping and excellent customer service. Highly recommend for
-                fashion
-                lovers.</p>
-        </div>
-        <div class="customer customer2">
-            <img src="./img/customer_02.jpg" alt="customer" height="100">
-            <h3>Lucas Wedio</h3>
-            <p>Fashion-forward items that stand out! Great quality and unique designs. Perfect for expressing your
-                personal style</p>
-        </div>
-        <div class="customer customer3">
-            <img src="./img/customer_03.jpg" alt="customer" height="100">
-            <h3>Jenny Chan</h3>
-            <p>Stylish clothing at unbeatable prices! Easy navigation and quick checkout. My go-to site for wardrobe
-                updates!</p>
+        <div class="customer-reviews">
+            <div class="customer customer1">
+                <img src="./img/customer_01.jpg" alt="customer" height="100">
+                <h3>John Jokie</h3>
+                <p>Incredible selection of trendy pieces! Fast shipping and excellent customer service. Highly recommend
+                    for
+                    fashion
+                    lovers.</p>
+            </div>
+            <div class="customer customer2">
+                <img src="./img/customer_02.jpg" alt="customer" height="100">
+                <h3>Lucas Wedio</h3>
+                <p>Fashion-forward items that stand out! Great quality and unique designs. Perfect for expressing your
+                    personal style</p>
+            </div>
+            <div class="customer customer3">
+                <img src="./img/customer_03.jpg" alt="customer" height="100">
+                <h3>Jenny Chan</h3>
+                <p>Stylish clothing at unbeatable prices! Easy navigation and quick checkout. My go-to site for wardrobe
+                    updates!</p>
+            </div>
         </div>
     </section>
 
