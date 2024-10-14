@@ -14,6 +14,7 @@
     --dark-teal-clr: rgb(8, 143, 143);
     --gold-clr: rgb(255, 165, 0);
     --orange-clr: rgb(249, 138, 74);
+    --transition-1: all 0.2s;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
     width: 100%;
     padding: 20px 10%;
     backdrop-filter: blur(5px);
+    z-index: 10;
 }
 
 .header-section .logo {
@@ -52,7 +54,7 @@ body {
     list-style: none;
     font-size: 21px;
     padding: 10px 30px;
-    transition: all 0.2s;
+    transition: var(--transition-1);
     cursor: pointer;
 }
 
@@ -78,8 +80,16 @@ body {
 }
 
 .header-section .icons img {
-    height: 30px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 50%;
+    transition: var(--transition-1);
     cursor: pointer;
+
+    &:hover {
+        background-color: rgb(80, 102, 0);
+        filter: invert(1);
+    }
 }
 
 .home-section {
@@ -133,14 +143,16 @@ body {
     & img {
         margin-left: 20px;
         filter: invert(1);
+        transition: var(--transition-1);
     }
 }
 
 .home-section button:hover > img {
-    animation: home-section-button 1s linear;
+    /* animation: home-section-button 1s linear; */
+    transform: translateX(5px);
 }
 
-@keyframes home-section-button {
+/* @keyframes home-section-button {
     0% {
         transform: translateX(0);
     }
@@ -164,7 +176,7 @@ body {
     100% {
         transform: translateX(0);
     }
-}
+} */
 
 h2 {
     color: var(--dark-gray-clr);
@@ -178,4 +190,41 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.collection-section h2 {
+    margin-bottom: 40px;
+}
+
+.sample-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding-inline: 20px;
+}
+
+.sample {
+    width: 300px;
+}
+
+.sample-img {
+    width: 100%;
+    height: 385px;
+    overflow: hidden;
+
+    &:hover img {
+        scale: 1.1;
+    }
+
+    & img {
+        width: 100%;
+        transition: var(--transition-1);
+        cursor: zoom-in;
+    }
+}
+
+.product-name {
+    font-size: 25px;
+    font-family: "visby-thin", sans-serif;
+    letter-spacing: 2px;
 }
